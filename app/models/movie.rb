@@ -15,7 +15,7 @@
 class Movie < ApplicationRecord
   def director
     d_id = self.director_id
-    matching_directors = Director.where({:id = > d_id})
+    matching_directors = Director.where({:id => d_id})
     the_directors = matching_directors.at(0)
     return the_directors
 

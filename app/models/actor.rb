@@ -12,6 +12,6 @@
 #
 class Actor < ApplicationRecord
   def characters
-    return Characters.where({:actors => self.id})
+    return Character.where({:actor_id => self.id})
   end
 end
