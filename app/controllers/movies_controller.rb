@@ -1,4 +1,5 @@
 class MoviesController < ApplicationController
+
   def index
     @list_of_movies = Movie.all.order({ :created_at => :desc })
 
